@@ -1,0 +1,5 @@
+exit
+console.log("Validator set:", addr);.exit
+await token.setValidator(addr, true);
+const token = await ethers.getContractAt("FinEuroToken", process.env.CONTRACT_ADDRESS_SEPOLIA);
+const addr = "0x915A5FB55B6748ae84C68BD81E98a8dbEC1F28C2";   
