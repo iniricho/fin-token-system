@@ -174,29 +174,9 @@ node mintWithSig.js
 
 ---
 
-## 🐍 Validator-PY (Python)
-
-Di folder `validator-py/`:
-
-```
-pip install requests eth-account web3 python-dotenv
-```
-
-- **parse_fin.py**: download & parse file `.fin`
-- **sign_payload.py**: generate EIP-712 signature
-
-**Jalankan**:
-
-```
-python parse_fin.py
-python sign_payload.py --network sepolia
-```
-
----
-
 ## 🔄 Alur Kerja
 
-1.  **Parse**: Python `parse_fin.py` → ambil `cid`, `txCode`, `receiver`, `amount`, `nonce`
-2.  **Sign**: Python `sign_payload.py` → hasilkan `signature`
+1.  **Parse**: ambil `cid`, `txCode`, `receiver`, `amount`, `nonce`
+2.  **Sign**: hasilkan `signature`
 3.  **Mint**: Node.js `mintWithSig.js` → submit mint transaction on-chain
 4.  **Verifikasi**: Cek event `MintedFIN` di Etherscan & balance penerima
