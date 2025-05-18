@@ -24,10 +24,6 @@ fin-token-system/
 │  ├─ mintWithSig.js
 │  ├─ burnListener.js
 │  └─ payoutSender.js
-├─ validator-py/                # Python: parse_fin, sign_payload
-│  ├─ parse_fin.py
-│  ├─ sign_payload.py
-│  └─ utils.py
 ├─ scripts/                     # Utility (export-abi.js)
 ├─ .env                         # Konfigurasi global
 ├─ hardhat.config.js            # Hardhat & Etherscan config
